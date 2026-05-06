@@ -13,6 +13,7 @@
 
   <!-- Components -->
   <link rel="stylesheet" href="css/components/nav.css" />
+  <link rel="stylesheet" href="css/components/button.css" />
 
   <!-- Page -->
   <link rel="stylesheet" href="css/pages/home.css" />
@@ -22,7 +23,107 @@
   <!-- nav injected by nav.js -->
 
   <main class="main" id="main">
-    <!-- home page content goes here -->
+
+    <section class="hero">
+      <div class="hero__bg">
+        <!-- swap src for a real photo when ready -->
+        <img class="hero__img" src="assets/images/hero-placeholder.jpg" alt="" aria-hidden="true" />
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <p class="hero__label text-label">South Philly — Est. 2025</p>
+        <h1 class="hero__title">Flash<br>point</h1>
+        <p class="hero__tagline">A home for outsider art<br>and community gatherings.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="gallery.html">View Gallery</a>
+          <a class="btn btn--ghost" href="events.html">Upcoming Events</a>
+        </div>
+      </div>
+      <div class="hero__scroll-hint text-label" aria-hidden="true">scroll</div>
+    </section>
+
+    <!-- Mission -->
+    <section class="mission">
+      <div class="mission__inner">
+        <span class="mission__label text-label">What we are</span>
+        <p class="mission__statement">A starting place where things combust into something new and exciting — outsider art, mutual aid, and low-stakes community, with no financial barriers.</p>
+        <a class="btn btn--outline" href="about.html">About Flashpoint</a>
+      </div>
+    </section>
+
+    <!-- Now Showing -->
+    <section class="now-showing">
+      <div class="now-showing__inner">
+        <div class="now-showing__meta">
+          <span class="now-showing__label text-label">Now Showing</span>
+          <h2 class="now-showing__title">Artist Name</h2>
+          <p class="now-showing__subtitle">Exhibition Title</p>
+          <a class="btn btn--ghost" href="gallery.html">View Gallery</a>
+        </div>
+        <div class="now-showing__image-wrap">
+          <img class="now-showing__img" src="assets/images/now-showing-placeholder.jpg" alt="Current exhibition" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Preview -->
+    <section class="events-preview">
+      <div class="events-preview__inner">
+        <div class="events-preview__header">
+          <span class="text-label">Upcoming</span>
+          <h2 class="events-preview__title">Events</h2>
+        </div>
+        <ul class="events-preview__list">
+          <li class="event-item">
+            <span class="event-item__date text-label">May 10</span>
+            <div class="event-item__body">
+              <h3 class="event-item__name">Drop-In Art Night</h3>
+              <p class="event-item__detail">Open studio — all are welcome, no experience needed</p>
+            </div>
+            <span class="event-item__time text-label">6–9 pm</span>
+          </li>
+          <li class="event-item">
+            <span class="event-item__date text-label">May 17</span>
+            <div class="event-item__body">
+              <h3 class="event-item__name">Harm Reduction Workshop</h3>
+              <p class="event-item__detail">Overdose reversal training with community organizations</p>
+            </div>
+            <span class="event-item__time text-label">5–7 pm</span>
+          </li>
+          <li class="event-item">
+            <span class="event-item__date text-label">May 24</span>
+            <div class="event-item__body">
+              <h3 class="event-item__name">Floor Cushion Hang</h3>
+              <p class="event-item__detail">Artist-hosted drop-in: sit, make, talk, be</p>
+            </div>
+            <span class="event-item__time text-label">7–10 pm</span>
+          </li>
+        </ul>
+        <a class="btn btn--outline" href="events.html">All Events</a>
+      </div>
+    </section>
+
+    <!-- Community CTA -->
+    <section class="community-cta">
+      <div class="community-cta__inner">
+        <h2 class="community-cta__heading">Get Involved</h2>
+        <div class="community-cta__links">
+          <a class="community-cta__link" href="connect.html#mailing-list">
+            <span>Join the mailing list</span>
+            <span class="community-cta__arrow">→</span>
+          </a>
+          <a class="community-cta__link" href="connect.html#signal">
+            <span>Join our Signal Chat</span>
+            <span class="community-cta__arrow">→</span>
+          </a>
+          <a class="community-cta__link" href="connect.html#event">
+            <span>Plan an event with us</span>
+            <span class="community-cta__arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <!-- Components -->
