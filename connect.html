@@ -39,7 +39,9 @@
         <div class="connect-option__content">
           <h2 class="connect-option__title">Join the Mailing List</h2>
           <p class="connect-option__desc">Low volume. We email when something's happening worth knowing about.</p>
-          <form class="connect-form" action="#" method="post">
+          <form class="connect-form" action="https://formspree.io/f/MAILING_FORM_ID" method="post">
+            <input type="hidden" name="_subject" value="Flashpoint — New mailing list signup" />
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" />
             <div class="form-field">
               <label class="form-label text-label" for="mailing-email">Your email</label>
               <input class="form-input" type="email" id="mailing-email" name="email" placeholder="you@example.com" required />
@@ -67,7 +69,9 @@
         <div class="connect-option__content">
           <h2 class="connect-option__title">Plan an Event</h2>
           <p class="connect-option__desc">Have an idea? A workshop, screening, conversation, performance — tell us about it and let's make it happen.</p>
-          <form class="connect-form" action="#" method="post">
+          <form class="connect-form" action="https://formspree.io/f/EVENT_FORM_ID" method="post">
+            <input type="hidden" name="_subject" value="Flashpoint — New event inquiry" />
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="display:none" />
             <div class="form-fields">
               <div class="form-field">
                 <label class="form-label text-label" for="event-name">Your name</label>
