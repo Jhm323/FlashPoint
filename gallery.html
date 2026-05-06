@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Current and past exhibitions at Flashpoint — outsider art in South Philadelphia." />
+  <title>Gallery — Flashpoint</title>
+
+  <!-- Base -->
+  <link rel="stylesheet" href="css/base/variables.css" />
+  <link rel="stylesheet" href="css/base/reset.css" />
+  <link rel="stylesheet" href="css/base/typography.css" />
+
+  <!-- Components -->
+  <link rel="stylesheet" href="css/components/nav.css" />
+  <link rel="stylesheet" href="css/components/button.css" />
+  <link rel="stylesheet" href="css/components/page-header.css" />
+
+  <!-- Page -->
+  <link rel="stylesheet" href="css/pages/gallery.css" />
+</head>
+<body>
+
+  <!-- nav injected by nav.js -->
+
+  <main class="main" id="main">
+
+    <section class="page-header">
+      <div class="page-header__inner">
+        <span class="page-header__label text-label">Now Showing</span>
+        <h1 class="page-header__title">Gallery</h1>
+        <p class="page-header__sub text-label">Rotating exhibitions by outsider artists</p>
+      </div>
+    </section>
+
+    <section class="exhibition">
+      <div class="exhibition__image-wrap">
+        <img class="exhibition__img" src="assets/images/exhibition-placeholder.jpg" alt="Current exhibition" aria-hidden="true" />
+        <div class="exhibition__overlay"></div>
+        <div class="exhibition__caption">
+          <span class="exhibition__dates text-label">On view through June 30, 2025</span>
+          <h2 class="exhibition__title">Exhibition Title</h2>
+          <p class="exhibition__artist text-label">Artist Name</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery-works">
+      <div class="gallery-works__grid">
+
+        <div class="work-item work-item--tall">
+          <img class="work-item__img" src="assets/images/work-1.jpg" alt="Untitled #1" />
+        </div>
+        <div class="work-item">
+          <img class="work-item__img" src="assets/images/work-2.jpg" alt="Untitled #2" />
+        </div>
+        <div class="work-item">
+          <img class="work-item__img" src="assets/images/work-3.jpg" alt="Untitled #3" />
+        </div>
+        <div class="work-item work-item--wide">
+          <img class="work-item__img" src="assets/images/work-4.jpg" alt="Untitled #4" />
+        </div>
+        <div class="work-item">
+          <img class="work-item__img" src="assets/images/work-5.jpg" alt="Untitled #5" />
+        </div>
+        <div class="work-item">
+          <img class="work-item__img" src="assets/images/work-6.jpg" alt="Untitled #6" />
+        </div>
+        <div class="work-item work-item--tall">
+          <img class="work-item__img" src="assets/images/work-7.jpg" alt="Untitled #7" />
+        </div>
+        <div class="work-item">
+          <img class="work-item__img" src="assets/images/work-8.jpg" alt="Untitled #8" />
+        </div>
+
+      </div>
+    </section>
+
+    <section class="gallery-artist">
+      <div class="gallery-artist__inner">
+        <span class="gallery-artist__label text-label">About the Artist</span>
+        <h2 class="gallery-artist__name">Artist Name</h2>
+        <p class="gallery-artist__bio">Artist bio goes here. A few sentences about their practice, background, and what drew them to this work. Keep it human — no press release language.</p>
+        <a class="btn btn--outline" href="connect.html">Get in Touch</a>
+      </div>
+    </section>
+
+    <section class="past-shows">
+      <div class="past-shows__inner">
+        <span class="past-shows__label text-label">Archive</span>
+        <ul class="past-shows__list">
+          <li class="past-show">
+            <span class="past-show__year text-label">2025</span>
+            <h3 class="past-show__title">Tender Infrastructure</h3>
+            <span class="past-show__artist text-label">Sam Rivera</span>
+          </li>
+          <li class="past-show">
+            <span class="past-show__year text-label">2025</span>
+            <h3 class="past-show__title">Noise / Signal</h3>
+            <span class="past-show__artist text-label">The Collective</span>
+          </li>
+          <li class="past-show">
+            <span class="past-show__year text-label">2025</span>
+            <h3 class="past-show__title">Found & Forgotten</h3>
+            <span class="past-show__artist text-label">Maria Chen</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Components -->
+  <script src="js/components/nav.js"></script>
+
+  <!-- Page -->
+  <script src="js/pages/gallery.js"></script>
+</body>
+</html>

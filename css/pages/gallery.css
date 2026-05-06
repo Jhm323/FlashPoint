@@ -1,0 +1,188 @@
+.exhibition {
+  background-color: var(--color-black);
+}
+
+.exhibition__image-wrap {
+  position: relative;
+  height: 80vh;
+  min-height: 480px;
+  overflow: hidden;
+}
+
+.exhibition__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background-color: #1a1a1a;
+}
+
+.exhibition__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(13, 13, 13, 0.88) 0%,
+    rgba(13, 13, 13, 0.2) 60%,
+    transparent 100%
+  );
+}
+
+.exhibition__caption {
+  position: absolute;
+  bottom: var(--space-lg);
+  left: var(--space-md);
+  right: var(--space-md);
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.exhibition__dates {
+  color: var(--color-accent);
+}
+
+.exhibition__title {
+  font-size: clamp(40px, 8vw, 80px);
+  color: var(--color-white);
+  line-height: 0.95;
+}
+
+.exhibition__artist {
+  color: var(--color-mid);
+}
+
+.gallery-works {
+  background-color: var(--color-black);
+  padding: 4px;
+}
+
+.gallery-works__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+
+.work-item {
+  overflow: hidden;
+  background-color: #1a1a1a;
+}
+
+.work-item--wide {
+  grid-column: span 2;
+}
+
+.work-item--tall {
+  grid-row: span 2;
+}
+
+.work-item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  aspect-ratio: 1;
+  background-color: #1a1a1a;
+  transition: transform var(--transition-base);
+}
+
+.work-item--tall .work-item__img {
+  aspect-ratio: auto;
+}
+
+.work-item:hover .work-item__img {
+  transform: scale(1.03);
+}
+
+.gallery-artist {
+  background-color: var(--color-off-white);
+  color: var(--color-black);
+  padding: var(--space-xl) var(--space-md);
+}
+
+.gallery-artist__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.gallery-artist__label {
+  color: var(--color-accent);
+}
+
+.gallery-artist__name {
+  font-size: clamp(48px, 8vw, 80px);
+  color: var(--color-black);
+  line-height: 0.95;
+}
+
+.gallery-artist__bio {
+  font-weight: 300;
+  max-width: 52ch;
+  color: #6b6760;
+}
+
+.past-shows {
+  background-color: var(--color-black);
+  padding: var(--space-xl) var(--space-md);
+}
+
+.past-shows__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.past-shows__label {
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: var(--space-lg);
+}
+
+.past-shows__list {
+  border-top: 1px solid #222;
+}
+
+.past-show {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid #222;
+}
+
+.past-show__year {
+  color: var(--color-mid);
+}
+
+.past-show__title {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+.past-show__artist {
+  color: var(--color-mid);
+}
+
+@media (max-width: 768px) {
+  .gallery-works__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-item--wide {
+    grid-column: span 2;
+  }
+
+  .past-show {
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .past-show__artist {
+    grid-column: 2;
+  }
+}
