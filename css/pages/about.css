@@ -1,0 +1,210 @@
+/* Page Header */
+
+.page-header {
+  background-color: var(--color-black);
+  padding: calc(var(--nav-height) + var(--space-xl)) var(--space-md) var(--space-xl);
+}
+
+.page-header__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.page-header__label {
+  color: var(--color-accent);
+}
+
+.page-header__title {
+  font-size: clamp(5rem, 15vw, 10rem);
+  line-height: 0.9;
+  color: var(--color-white);
+}
+
+.page-header__sub {
+  color: var(--color-mid);
+  margin-top: var(--space-xs);
+}
+
+/* Mission */
+
+.about-mission {
+  background-color: var(--color-off-white);
+  color: var(--color-black);
+  padding: var(--space-xl) var(--space-md);
+}
+
+.about-mission__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.about-mission__label {
+  color: var(--color-accent);
+}
+
+.about-mission__statement {
+  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+  font-weight: 300;
+  line-height: 1.5;
+  max-width: 30ch;
+  color: var(--color-black);
+}
+
+.about-mission__quote {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-weight: 300;
+  font-size: var(--text-md);
+  color: #6b6760;
+  border-left: 2px solid var(--color-accent);
+  padding-left: var(--space-md);
+  max-width: 40ch;
+}
+
+/* Pillars */
+
+.about-pillars {
+  background-color: var(--color-black);
+  padding: var(--space-xl) var(--space-md);
+}
+
+.about-pillars__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.about-pillars__label {
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: var(--space-lg);
+}
+
+.about-pillars__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.pillar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.pillar__num {
+  color: var(--color-accent);
+}
+
+.pillar__title {
+  font-size: var(--text-lg);
+  color: var(--color-white);
+}
+
+.pillar__body {
+  font-weight: 300;
+  color: var(--color-mid);
+  max-width: none;
+}
+
+/* People */
+
+.about-people {
+  background-color: var(--color-off-white);
+  color: var(--color-black);
+  padding: var(--space-xl) var(--space-md);
+}
+
+.about-people__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.about-people__label {
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: var(--space-lg);
+}
+
+.about-people__list {
+  border-top: 1px solid #c8c4bc;
+}
+
+.person {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-md);
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid #c8c4bc;
+}
+
+.person__name {
+  font-size: clamp(2rem, 5vw, var(--text-xl));
+  color: var(--color-black);
+  line-height: 1;
+}
+
+.person__role {
+  color: var(--color-accent);
+  max-width: none;
+}
+
+/* Find Us */
+
+.about-find-us {
+  background-color: var(--color-black);
+  padding: var(--space-xl) var(--space-md);
+}
+
+.about-find-us__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.about-find-us__label {
+  color: var(--color-accent);
+}
+
+.about-find-us__address {
+  font-style: normal;
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, var(--text-xl));
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--color-white);
+}
+
+.about-find-us__address p {
+  max-width: none;
+}
+
+.about-find-us__email {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  letter-spacing: 0.05em;
+  color: var(--color-mid);
+  transition: color var(--transition-fast);
+}
+
+.about-find-us__email:hover {
+  color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  .about-pillars__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .person {
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+}
