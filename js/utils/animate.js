@@ -62,4 +62,18 @@ function initReveal() {
   elements.forEach(el => observer.observe(el));
 }
 
-document.addEventListener('DOMContentLoaded', initReveal);
+function initRainbowDividers() {
+  const sections = document.querySelectorAll('.main > section');
+  sections.forEach((section, i) => {
+    if (i === 0) return;
+    const divider = document.createElement('div');
+    divider.className = 'fp-rainbow-divider';
+    divider.setAttribute('aria-hidden', 'true');
+    section.parentNode.insertBefore(divider, section);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  initReveal();
+  initRainbowDividers();
+});

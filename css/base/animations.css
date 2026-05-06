@@ -44,6 +44,29 @@
   transform: translateY(0);
 }
 
+@keyframes rainbow-flow {
+  0%   { background-position: 0% 0%; }
+  100% { background-position: 100% 0%; }
+}
+
+.fp-rainbow-divider {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    #d63c1e 10%,
+    #f4861a 22%,
+    #e9c46a 34%,
+    #52b788 46%,
+    #4895ef 58%,
+    #9b59b6 70%,
+    #d63c1e 82%,
+    transparent 100%
+  );
+  background-size: 300% 100%;
+  animation: rainbow-flow 14s ease-in-out infinite alternate;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .fp-load {
     animation: none;
@@ -53,5 +76,9 @@
     opacity: 1;
     transform: none;
     transition: none;
+  }
+  .fp-rainbow-divider {
+    animation: none;
+    background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
   }
 }
