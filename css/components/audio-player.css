@@ -1,0 +1,123 @@
+.audio-player {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: var(--color-black);
+  border-top: 1px solid #222;
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.audio-player.is-visible {
+  transform: translateY(0);
+}
+
+.audio-player__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 12px var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.audio-player__play {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-accent);
+  background-color: transparent;
+  color: var(--color-accent);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.audio-player__play:hover {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.audio-player__play svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.audio-player__info {
+  flex: 1;
+  min-width: 0;
+}
+
+.audio-player__station {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+
+.audio-player__label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-mid);
+  margin-top: 2px;
+}
+
+.audio-player__status {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #333;
+  flex-shrink: 0;
+  transition: background-color var(--transition-base);
+}
+
+.audio-player__status.is-live {
+  background-color: var(--color-accent);
+  animation: audio-pulse 2s ease-in-out infinite;
+}
+
+.audio-player__dismiss {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  color: var(--color-mid);
+  cursor: pointer;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  padding: 4px;
+  transition: color var(--transition-fast);
+}
+
+.audio-player__dismiss:hover {
+  color: var(--color-white);
+}
+
+@keyframes audio-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .audio-player__status.is-live {
+    animation: none;
+  }
+  .audio-player {
+    transition: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .audio-player__inner {
+    padding: 12px var(--space-sm);
+    gap: var(--space-sm);
+  }
+}
