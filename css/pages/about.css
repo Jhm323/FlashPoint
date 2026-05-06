@@ -18,7 +18,7 @@
 }
 
 .page-header__title {
-  font-size: clamp(5rem, 15vw, 10rem);
+  font-size: clamp(80px, 15vw, 160px);
   line-height: 0.9;
   color: var(--color-white);
 }
@@ -49,7 +49,7 @@
 }
 
 .about-mission__statement {
-  font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+  font-size: clamp(20px, 2.5vw, 30px);
   font-weight: 300;
   line-height: 1.5;
   max-width: 30ch;
@@ -144,7 +144,7 @@
 }
 
 .person__name {
-  font-size: clamp(2rem, 5vw, var(--text-xl));
+  font-size: clamp(32px, 5vw, 40px);
   color: var(--color-black);
   line-height: 1;
 }
@@ -176,7 +176,7 @@
 .about-find-us__address {
   font-style: normal;
   font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, var(--text-xl));
+  font-size: clamp(32px, 5vw, 40px);
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--color-white);

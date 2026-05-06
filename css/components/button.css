@@ -4,7 +4,7 @@
   font-size: var(--text-xs);
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 0.9rem 1.75rem;
+  padding: 14px 28px;
   border: 1px solid currentColor;
   transition: background-color var(--transition-fast), color var(--transition-fast);
   white-space: nowrap;
