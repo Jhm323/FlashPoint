@@ -29,6 +29,7 @@ function buildFooter() {
       </div>
       <div class="footer__bottom">
         <p class="footer__copy text-label">© ${year} Flashpoint Gallery & Community Space</p>
+        <a class="footer__credit text-label" href="https://github.com/jhm323" target="_blank" rel="noopener">Site by JHM ↗</a>
       </div>
     </footer>
   `;
