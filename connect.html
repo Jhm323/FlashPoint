@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Get in touch with Flashpoint — join our mailing list, Signal chat, or plan an event with us." />
+  <title>Connect — Flashpoint</title>
+
+  <!-- Base -->
+  <link rel="stylesheet" href="css/base/variables.css" />
+  <link rel="stylesheet" href="css/base/reset.css" />
+  <link rel="stylesheet" href="css/base/typography.css" />
+
+  <!-- Components -->
+  <link rel="stylesheet" href="css/components/nav.css" />
+  <link rel="stylesheet" href="css/components/button.css" />
+  <link rel="stylesheet" href="css/components/page-header.css" />
+
+  <!-- Page -->
+  <link rel="stylesheet" href="css/pages/connect.css" />
+</head>
+<body>
+
+  <!-- nav injected by nav.js -->
+
+  <main class="main" id="main">
+
+    <section class="page-header">
+      <div class="page-header__inner">
+        <span class="page-header__label text-label">Get Involved</span>
+        <h1 class="page-header__title">Connect</h1>
+        <p class="page-header__sub text-label">1226 Tasker St — flashpointphilly@gmail.com</p>
+      </div>
+    </section>
+
+    <section class="connect-option" id="mailing-list">
+      <div class="connect-option__inner">
+        <span class="connect-option__num text-label">01</span>
+        <div class="connect-option__content">
+          <h2 class="connect-option__title">Join the Mailing List</h2>
+          <p class="connect-option__desc">Low volume. We email when something's happening worth knowing about.</p>
+          <form class="connect-form" action="#" method="post">
+            <div class="form-field">
+              <label class="form-label text-label" for="mailing-email">Your email</label>
+              <input class="form-input" type="email" id="mailing-email" name="email" placeholder="you@example.com" required />
+            </div>
+            <button class="btn btn--outline" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="connect-option connect-option--dark" id="signal">
+      <div class="connect-option__inner">
+        <span class="connect-option__num text-label">02</span>
+        <div class="connect-option__content">
+          <h2 class="connect-option__title">Join our Signal Chat</h2>
+          <p class="connect-option__desc">Where we post announcements, last-minute events, and community updates. No spam, no noise.</p>
+          <a class="btn btn--ghost" href="#" target="_blank" rel="noopener">Open Signal Link</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="connect-option" id="event">
+      <div class="connect-option__inner">
+        <span class="connect-option__num text-label">03</span>
+        <div class="connect-option__content">
+          <h2 class="connect-option__title">Plan an Event</h2>
+          <p class="connect-option__desc">Have an idea? A workshop, screening, conversation, performance — tell us about it and let's make it happen.</p>
+          <form class="connect-form" action="#" method="post">
+            <div class="form-fields">
+              <div class="form-field">
+                <label class="form-label text-label" for="event-name">Your name</label>
+                <input class="form-input" type="text" id="event-name" name="name" required />
+              </div>
+              <div class="form-field">
+                <label class="form-label text-label" for="event-email">Your email</label>
+                <input class="form-input" type="email" id="event-email" name="email" required />
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label text-label" for="event-idea">Tell us about your idea</label>
+              <textarea class="form-input form-input--textarea" id="event-idea" name="idea" rows="6" required></textarea>
+            </div>
+            <button class="btn btn--outline" type="submit">Send It</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="connect-contacts">
+      <div class="connect-contacts__inner">
+        <span class="connect-contacts__label text-label">Direct Contact</span>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <h3 class="contact-item__name">Jay</h3>
+            <p class="contact-item__role text-label">Art & Curation</p>
+            <a class="contact-item__email" href="mailto:flashpointphilly@gmail.com">flashpointphilly@gmail.com</a>
+          </li>
+          <li class="contact-item">
+            <h3 class="contact-item__name">Lauren & Anisa</h3>
+            <p class="contact-item__role text-label">Events</p>
+            <a class="contact-item__email" href="mailto:flashpointphilly@gmail.com">flashpointphilly@gmail.com</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Components -->
+  <script src="js/components/nav.js"></script>
+
+  <!-- Page -->
+  <script src="js/pages/connect.js"></script>
+</body>
+</html>
