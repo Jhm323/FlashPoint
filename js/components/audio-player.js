@@ -1,8 +1,9 @@
 (function () {
   const STREAM_URL = 'https://wrti-live.streamguys1.com/jazz-mp3';
-  const STORAGE_KEY = 'fp-audio-dismissed';
+  const KEY_PLAYING = 'fp-audio-playing';
+  const KEY_DISMISSED = 'fp-audio-dismissed';
 
-  if (sessionStorage.getItem(STORAGE_KEY)) return;
+  if (sessionStorage.getItem(KEY_DISMISSED)) return;
 
   const PLAY_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>`;
   const PAUSE_ICON = `<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>`;
@@ -42,6 +43,16 @@
     playBtn.setAttribute('aria-label', state ? 'Pause jazz radio' : 'Play jazz radio');
     playBtn.setAttribute('aria-pressed', String(state));
     statusDot.classList.toggle('is-live', state);
+    if (state) {
+      localStorage.setItem(KEY_PLAYING, '1');
+    } else {
+      localStorage.removeItem(KEY_PLAYING);
+    }
+  }
+
+  function startStream() {
+    audio.src = STREAM_URL;
+    return audio.play();
   }
 
   playBtn.addEventListener('click', function () {
@@ -50,8 +61,7 @@
       audio.src = '';
       setPlaying(false);
     } else {
-      audio.src = STREAM_URL;
-      audio.play().catch(function () {
+      startStream().catch(function () {
         setPlaying(false);
       });
       setPlaying(true);
@@ -61,14 +71,23 @@
   dismissBtn.addEventListener('click', function () {
     audio.pause();
     audio.src = '';
+    localStorage.removeItem(KEY_PLAYING);
     player.classList.remove('is-visible');
-    sessionStorage.setItem(STORAGE_KEY, '1');
+    sessionStorage.setItem(KEY_DISMISSED, '1');
     setTimeout(function () { player.remove(); }, 400);
   });
 
   requestAnimationFrame(function () {
     requestAnimationFrame(function () {
       player.classList.add('is-visible');
+
+      if (localStorage.getItem(KEY_PLAYING)) {
+        startStream().then(function () {
+          setPlaying(true);
+        }).catch(function () {
+          localStorage.removeItem(KEY_PLAYING);
+        });
+      }
     });
   });
 })();
