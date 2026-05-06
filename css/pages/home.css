@@ -233,12 +233,12 @@
 
 .event-item__detail {
   font-size: var(--text-sm);
-  color: #6b6760;
+  color: #57534f;
   max-width: none;
 }
 
 .event-item__time {
-  color: #6b6760;
+  color: #57534f;
   white-space: nowrap;
 }
 

@@ -31,7 +31,7 @@
   font-style: italic;
   font-weight: 300;
   font-size: var(--text-md);
-  color: #6b6760;
+  color: #57534f;
   border-left: 2px solid var(--color-accent);
   padding-left: var(--space-md);
   max-width: 40ch;
@@ -80,6 +80,50 @@
   font-weight: 300;
   color: var(--color-mid);
   max-width: none;
+}
+
+/* The Space */
+
+.about-space {
+  background-color: var(--color-black);
+  padding: var(--space-xl) var(--space-md);
+}
+
+.about-space__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.about-space__label {
+  color: var(--color-accent);
+  display: block;
+  margin-bottom: var(--space-lg);
+}
+
+.about-space__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background-color: #222;
+}
+
+.space-item {
+  background-color: var(--color-black);
+  padding: var(--space-md) var(--space-md) var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.space-item__title {
+  font-size: var(--text-xl);
+  color: var(--color-white);
+}
+
+.space-item__desc {
+  font-weight: 300;
+  color: var(--color-mid);
+  max-width: 32ch;
 }
 
 /* People */
@@ -169,6 +213,10 @@
 }
 
 @media (max-width: 768px) {
+  .about-space__grid {
+    grid-template-columns: 1fr;
+  }
+
   .about-pillars__grid {
     grid-template-columns: 1fr;
   }
