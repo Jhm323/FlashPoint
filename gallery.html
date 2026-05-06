@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/base/variables.css" />
   <link rel="stylesheet" href="css/base/reset.css" />
   <link rel="stylesheet" href="css/base/typography.css" />
+  <link rel="stylesheet" href="css/base/animations.css" />
 
   <!-- Components -->
   <link rel="stylesheet" href="css/components/nav.css" />
@@ -39,9 +40,9 @@
         <img class="exhibition__img" src="assets/images/exhibition-placeholder.jpg" alt="Current exhibition" aria-hidden="true" />
         <div class="exhibition__overlay"></div>
         <div class="exhibition__caption">
-          <span class="exhibition__dates text-label">On view through June 30, 2025</span>
-          <h2 class="exhibition__title">Exhibition Title</h2>
-          <p class="exhibition__artist text-label">Artist Name</p>
+          <span class="exhibition__dates text-label fp-load" style="--load-delay:200ms">On view through June 30, 2025</span>
+          <h2 class="exhibition__title fp-load fp-load--hero" style="--load-delay:350ms">Exhibition Title</h2>
+          <p class="exhibition__artist text-label fp-load" style="--load-delay:600ms">Artist Name</p>
         </div>
       </div>
     </section>
@@ -114,6 +115,7 @@
   <!-- Components -->
   <script src="js/components/nav.js"></script>
   <script src="js/components/footer.js"></script>
+  <script src="js/utils/animate.js"></script>
 
   <!-- Page -->
   <script src="js/pages/gallery.js"></script>

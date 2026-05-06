@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/base/variables.css" />
   <link rel="stylesheet" href="css/base/reset.css" />
   <link rel="stylesheet" href="css/base/typography.css" />
+  <link rel="stylesheet" href="css/base/animations.css" />
 
   <!-- Components -->
   <link rel="stylesheet" href="css/components/nav.css" />
@@ -32,15 +33,15 @@
         <div class="hero__overlay"></div>
       </div>
       <div class="hero__content">
-        <p class="hero__label text-label">South Philly — Est. 2025</p>
-        <h1 class="hero__title">Flash<br>point</h1>
-        <p class="hero__tagline">A home for outsider art<br>and community gatherings.</p>
-        <div class="hero__actions">
+        <p class="hero__label text-label fp-load" style="--load-delay:100ms">South Philly — Est. 2025</p>
+        <h1 class="hero__title fp-load fp-load--hero" style="--load-delay:200ms">Flash<br>point</h1>
+        <p class="hero__tagline fp-load" style="--load-delay:500ms">A home for outsider art<br>and community gatherings.</p>
+        <div class="hero__actions fp-load" style="--load-delay:700ms">
           <a class="btn btn--primary" href="gallery.html">View Gallery</a>
           <a class="btn btn--ghost" href="events.html">Upcoming Events</a>
         </div>
       </div>
-      <div class="hero__scroll-hint text-label" aria-hidden="true">scroll</div>
+      <div class="hero__scroll-hint text-label fp-load" style="--load-delay:900ms" aria-hidden="true">scroll</div>
     </section>
 
     <!-- Mission -->
@@ -130,6 +131,7 @@
   <!-- Components -->
   <script src="js/components/nav.js"></script>
   <script src="js/components/footer.js"></script>
+  <script src="js/utils/animate.js"></script>
 
   <!-- Page -->
   <script src="js/pages/home.js"></script>
