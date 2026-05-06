@@ -5,4 +5,10 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self'; img-src 'self' data: blob:; form-action 'self' https://formspree.io; connect-src 'self' https://formspree.io; frame-ancestors 'none'; base-uri 'self'; object-src 'none'
+  Content-Security-Policy: default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; script-src 'self' https://identity.netlify.com 'unsafe-inline'; img-src 'self' data: blob:; form-action 'self' https://formspree.io; connect-src 'self' https://formspree.io https://identity.netlify.com; frame-ancestors 'none'; base-uri 'self'; object-src 'none'
+
+/admin/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self' https://unpkg.com https://identity.netlify.com 'unsafe-eval' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: blob: https:; connect-src 'self' https://api.netlify.com https://*.netlify.com https://identity.netlify.com; frame-src 'self' https://identity.netlify.com; object-src 'none'

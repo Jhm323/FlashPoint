@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "title": "Drop-In Art Night",
+      "date": "2025-05-10",
+      "time": "6–9 pm",
+      "tag": "Drop-In",
+      "description": "Open studio — all are welcome, no experience needed. Bring something to work on or start something new."
+    },
+    {
+      "title": "Harm Reduction Workshop",
+      "date": "2025-05-17",
+      "time": "5–7 pm",
+      "tag": "Workshop",
+      "description": "Overdose reversal training with local community organizations. Hear from different groups about how to get involved."
+    },
+    {
+      "title": "Floor Cushion Hang",
+      "date": "2025-05-24",
+      "time": "7–10 pm",
+      "tag": "Drop-In",
+      "description": "Artist-hosted drop-in: sit, make, talk, be. The artist whose work is on the walls will be there to chat."
+    },
+    {
+      "title": "Opening Reception",
+      "date": "2025-06-07",
+      "time": "6–9 pm",
+      "tag": "Exhibition",
+      "description": "Join us for the opening of our next exhibition. Meet the artist, see the work, have a drink."
+    },
+    {
+      "title": "Zine-Making Workshop",
+      "date": "2025-06-14",
+      "time": "2–5 pm",
+      "tag": "Workshop",
+      "description": "Make a zine from scratch. Materials provided. All skill levels welcome — the messier the better."
+    },
+    {
+      "title": "Community Conversation",
+      "date": "2025-06-21",
+      "time": "5–7 pm",
+      "tag": "Community",
+      "description": "An open forum for neighbors, artists, and organizers to share what's happening and what's needed in South Philly."
+    }
+  ]
+}

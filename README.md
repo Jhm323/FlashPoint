@@ -50,20 +50,19 @@ Hosted on Netlify. Push to `main` and Netlify deploys automatically. Security he
 
 These placeholders need real values before launch:
 
-| Placeholder | File | What to replace |
-|---|---|---|
-| `MAILING_FORM_ID` | `connect.html` | Formspree form ID for mailing list |
-| `EVENT_FORM_ID` | `connect.html` | Formspree form ID for event inquiries |
-| `href="#"` on Signal button | `connect.html` | Real Signal group invite link |
-| `flashpointphilly.com` | all HTML, `sitemap.xml`, `seo.js` | Real domain once purchased |
-| `assets/images/` | all HTML | Real photos (hero, exhibition, works) |
-| `assets/icons/` | `site.webmanifest` | Favicon and PWA icons (192×192, 512×512 PNG) |
-| `assets/images/og-image.jpg` | all HTML | OG image for social sharing (1200×630) |
+| Placeholder                  | File                              | What to replace                              |
+| ---------------------------- | --------------------------------- | -------------------------------------------- |
+| `MAILING_FORM_ID`            | `connect.html`                    | Formspree form ID for mailing list           |
+| `EVENT_FORM_ID`              | `connect.html`                    | Formspree form ID for event inquiries        |
+| `href="#"` on Signal button  | `connect.html`                    | Real Signal group invite link                |
+| `flashpointphilly.com`       | all HTML, `sitemap.xml`, `seo.js` | Real domain once purchased                   |
+| `assets/images/`             | all HTML                          | Real photos (hero, exhibition, works)        |
+| `assets/icons/`              | `site.webmanifest`                | Favicon and PWA icons (192×192, 512×512 PNG) |
+| `assets/images/og-image.jpg` | all HTML                          | OG image for social sharing (1200×630)       |
 
 ## CSS conventions
 
 - BEM methodology throughout
-- All values in `px` — no `rem`
 - Design tokens defined in `css/base/variables.css`
 - Dark sections use `--color-black` (`#0d0d0d`), light sections use `--color-white` (`#f4f2ee`)
 

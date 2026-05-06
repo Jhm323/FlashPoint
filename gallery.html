@@ -52,52 +52,25 @@
 
     <section class="exhibition">
       <div class="exhibition__image-wrap">
-        <img class="exhibition__img" src="assets/images/exhibition-placeholder.jpg" alt="Current exhibition" aria-hidden="true" />
+        <img class="exhibition__img" id="exhibition-img" src="assets/images/exhibition-placeholder.jpg" alt="Current exhibition" aria-hidden="true" />
         <div class="exhibition__overlay"></div>
         <div class="exhibition__caption">
-          <span class="exhibition__dates text-label fp-load" style="--load-delay:200ms">On view through June 30, 2025</span>
-          <h2 class="exhibition__title fp-load fp-load--hero" style="--load-delay:350ms">Exhibition Title</h2>
-          <p class="exhibition__artist text-label fp-load" style="--load-delay:600ms">Artist Name</p>
+          <span class="exhibition__dates text-label fp-load" id="exhibition-dates" style="--load-delay:200ms"></span>
+          <h2 class="exhibition__title fp-load fp-load--hero" id="exhibition-title" style="--load-delay:350ms"></h2>
+          <p class="exhibition__artist text-label fp-load" id="exhibition-artist" style="--load-delay:600ms"></p>
         </div>
       </div>
     </section>
 
     <section class="gallery-works">
-      <div class="gallery-works__grid">
-
-        <div class="work-item work-item--tall">
-          <img class="work-item__img" src="assets/images/work-1.jpg" alt="Untitled #1" />
-        </div>
-        <div class="work-item">
-          <img class="work-item__img" src="assets/images/work-2.jpg" alt="Untitled #2" />
-        </div>
-        <div class="work-item">
-          <img class="work-item__img" src="assets/images/work-3.jpg" alt="Untitled #3" />
-        </div>
-        <div class="work-item work-item--wide">
-          <img class="work-item__img" src="assets/images/work-4.jpg" alt="Untitled #4" />
-        </div>
-        <div class="work-item">
-          <img class="work-item__img" src="assets/images/work-5.jpg" alt="Untitled #5" />
-        </div>
-        <div class="work-item">
-          <img class="work-item__img" src="assets/images/work-6.jpg" alt="Untitled #6" />
-        </div>
-        <div class="work-item work-item--tall">
-          <img class="work-item__img" src="assets/images/work-7.jpg" alt="Untitled #7" />
-        </div>
-        <div class="work-item">
-          <img class="work-item__img" src="assets/images/work-8.jpg" alt="Untitled #8" />
-        </div>
-
-      </div>
+      <div class="gallery-works__grid" id="works-grid"></div>
     </section>
 
     <section class="gallery-artist">
       <div class="gallery-artist__inner">
         <span class="gallery-artist__label text-label">About the Artist</span>
-        <h2 class="gallery-artist__name">Artist Name</h2>
-        <p class="gallery-artist__bio">Artist bio goes here. A few sentences about their practice, background, and what drew them to this work. Keep it human — no press release language.</p>
+        <h2 class="gallery-artist__name" id="artist-name"></h2>
+        <p class="gallery-artist__bio" id="artist-bio"></p>
         <a class="btn btn--outline" href="connect.html">Get in Touch</a>
       </div>
     </section>
@@ -105,23 +78,7 @@
     <section class="past-shows">
       <div class="past-shows__inner">
         <span class="past-shows__label text-label">Archive</span>
-        <ul class="past-shows__list">
-          <li class="past-show">
-            <span class="past-show__year text-label">2025</span>
-            <h3 class="past-show__title">Tender Infrastructure</h3>
-            <span class="past-show__artist text-label">Sam Rivera</span>
-          </li>
-          <li class="past-show">
-            <span class="past-show__year text-label">2025</span>
-            <h3 class="past-show__title">Noise / Signal</h3>
-            <span class="past-show__artist text-label">The Collective</span>
-          </li>
-          <li class="past-show">
-            <span class="past-show__year text-label">2025</span>
-            <h3 class="past-show__title">Found & Forgotten</h3>
-            <span class="past-show__artist text-label">Maria Chen</span>
-          </li>
-        </ul>
+        <ul class="past-shows__list" id="past-shows-list"></ul>
       </div>
     </section>
 

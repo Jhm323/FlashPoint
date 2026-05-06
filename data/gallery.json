@@ -1,0 +1,24 @@
+{
+  "current": {
+    "title": "Exhibition Title",
+    "artist": "Artist Name",
+    "dates": "On view through June 30, 2025",
+    "bio": "Artist bio goes here. A few sentences about their practice, background, and what drew them to this work. Keep it human — no press release language.",
+    "image": "assets/images/exhibition-placeholder.jpg",
+    "works": [
+      { "src": "assets/images/work-1.jpg", "alt": "Untitled #1", "size": "tall" },
+      { "src": "assets/images/work-2.jpg", "alt": "Untitled #2", "size": "normal" },
+      { "src": "assets/images/work-3.jpg", "alt": "Untitled #3", "size": "normal" },
+      { "src": "assets/images/work-4.jpg", "alt": "Untitled #4", "size": "wide" },
+      { "src": "assets/images/work-5.jpg", "alt": "Untitled #5", "size": "normal" },
+      { "src": "assets/images/work-6.jpg", "alt": "Untitled #6", "size": "normal" },
+      { "src": "assets/images/work-7.jpg", "alt": "Untitled #7", "size": "tall" },
+      { "src": "assets/images/work-8.jpg", "alt": "Untitled #8", "size": "normal" }
+    ]
+  },
+  "past": [
+    { "year": "2025", "title": "Tender Infrastructure", "artist": "Sam Rivera" },
+    { "year": "2025", "title": "Noise / Signal", "artist": "The Collective" },
+    { "year": "2025", "title": "Found & Forgotten", "artist": "Maria Chen" }
+  ]
+}

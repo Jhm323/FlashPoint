@@ -73,8 +73,8 @@
       <div class="now-showing__inner">
         <div class="now-showing__meta">
           <span class="now-showing__label text-label">Now Showing</span>
-          <h2 class="now-showing__title">Artist Name</h2>
-          <p class="now-showing__subtitle">Exhibition Title</p>
+          <h2 class="now-showing__title" id="now-showing-title"></h2>
+          <p class="now-showing__subtitle" id="now-showing-subtitle"></p>
           <a class="btn btn--ghost" href="gallery.html">View Gallery</a>
         </div>
         <div class="now-showing__image-wrap">
@@ -90,32 +90,7 @@
           <span class="text-label">Upcoming</span>
           <h2 class="events-preview__title">Events</h2>
         </div>
-        <ul class="events-preview__list">
-          <li class="event-item">
-            <span class="event-item__date text-label">May 10</span>
-            <div class="event-item__body">
-              <h3 class="event-item__name">Drop-In Art Night</h3>
-              <p class="event-item__detail">Open studio — all are welcome, no experience needed</p>
-            </div>
-            <span class="event-item__time text-label">6–9 pm</span>
-          </li>
-          <li class="event-item">
-            <span class="event-item__date text-label">May 17</span>
-            <div class="event-item__body">
-              <h3 class="event-item__name">Harm Reduction Workshop</h3>
-              <p class="event-item__detail">Overdose reversal training with community organizations</p>
-            </div>
-            <span class="event-item__time text-label">5–7 pm</span>
-          </li>
-          <li class="event-item">
-            <span class="event-item__date text-label">May 24</span>
-            <div class="event-item__body">
-              <h3 class="event-item__name">Floor Cushion Hang</h3>
-              <p class="event-item__detail">Artist-hosted drop-in: sit, make, talk, be</p>
-            </div>
-            <span class="event-item__time text-label">7–10 pm</span>
-          </li>
-        </ul>
+        <ul class="events-preview__list" id="events-preview-list"></ul>
         <a class="btn btn--outline" href="events.html">All Events</a>
       </div>
     </section>
@@ -152,5 +127,18 @@
 
   <!-- Page -->
   <script src="js/pages/home.js"></script>
+
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on('init', function (user) {
+        if (!user) {
+          window.netlifyIdentity.on('login', function () {
+            document.location.href = '/admin/';
+          });
+        }
+      });
+    }
+  </script>
 </body>
 </html>

@@ -1,0 +1,67 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: assets/images/uploads
+public_folder: assets/images/uploads
+
+collections:
+  - name: events
+    label: Events
+    files:
+      - name: events
+        label: All Events
+        file: data/events.json
+        fields:
+          - label: Events
+            name: events
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string }
+              - label: Date
+                name: date
+                widget: datetime
+                format: "YYYY-MM-DD"
+                date_format: "MMMM D, YYYY"
+                time_format: false
+              - { label: Time, name: time, widget: string, hint: "e.g. 6–9 pm" }
+              - label: Tag
+                name: tag
+                widget: select
+                options: [Drop-In, Workshop, Exhibition, Community]
+              - { label: Description, name: description, widget: text }
+
+  - name: gallery
+    label: Gallery
+    files:
+      - name: gallery
+        label: Exhibition & Past Shows
+        file: data/gallery.json
+        fields:
+          - label: Current Exhibition
+            name: current
+            widget: object
+            fields:
+              - { label: Exhibition Title, name: title, widget: string }
+              - { label: Artist Name, name: artist, widget: string }
+              - { label: On View Dates, name: dates, widget: string, hint: "e.g. On view through June 30, 2025" }
+              - { label: Artist Bio, name: bio, widget: text }
+              - { label: Exhibition Image, name: image, widget: image }
+              - label: Works
+                name: works
+                widget: list
+                fields:
+                  - { label: Image, name: src, widget: image }
+                  - { label: Alt Text, name: alt, widget: string }
+                  - label: Size
+                    name: size
+                    widget: select
+                    options: [normal, tall, wide]
+                    default: normal
+          - label: Past Shows
+            name: past
+            widget: list
+            fields:
+              - { label: Year, name: year, widget: string }
+              - { label: Title, name: title, widget: string }
+              - { label: Artist, name: artist, widget: string }
