@@ -1,3 +1,5 @@
+Sitemap: https://flashpointphilly.com/sitemap.xml
+
 # Allow all human crawlers (Google, Bing, etc.)
 User-agent: *
 Allow: /
