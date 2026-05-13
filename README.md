@@ -74,24 +74,7 @@ python3 -m http.server
  
 ## Deployment
  
-Hosted on Netlify. Push to `main` and Netlify deploys automatically. Security headers are configured in `_headers`.
- 
----
- 
-## Before Going Live
- 
-These placeholders need real values before launch:
- 
-| Placeholder                  | File                                | What to Replace                                |
-| ---------------------------- | ----------------------------------- | ---------------------------------------------- |
-| `MAILING_FORM_ID`            | `connect.html`                      | Formspree form ID for the contact form         |
-| `EVENT_FORM_ID`              | `connect.html`                      | Formspree form ID for exhibit scheduling       |
-| `href="#"` on Signal button  | `connect.html`                      | Real Signal group invite link                  |
-| `flashpointphilly.com`       | all HTML, `sitemap.xml`, `seo.js`   | Real domain once purchased                     |
-| `assets/images/`             | all HTML                            | Real photos (hero, exhibition, works)          |
-| `assets/icons/`              | `site.webmanifest`                  | Favicon and PWA icons (192×192, 512×512 PNG)   |
-| `assets/images/og-image.jpg` | all HTML                            | OG image for social sharing (1200×630 px)      |
-| Admin credentials            | `js/pages/admin.js` (or equivalent) | Secure owner login for gallery/calendar access |
+Hosted on Vercel. Push to `main` and Vercel deploys automatically. Security headers are configured in `_headers`.
  
 ---
  
