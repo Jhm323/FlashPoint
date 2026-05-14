@@ -80,6 +80,23 @@
   color: var(--color-mid);
 }
 
+.events-coming-soon {
+  padding: var(--space-xl) 0;
+}
+
+.events-coming-soon__body {
+  font-size: var(--text-md);
+  font-weight: 300;
+  color: #57534f;
+  max-width: 48ch;
+}
+
+.events-coming-soon__body a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .events-host {
   background-color: var(--color-black);
   padding: var(--space-xl) var(--space-md);

@@ -43,6 +43,15 @@ function render(data) {
   const container = document.getElementById('events-container');
   if (!container) return;
 
+  if (data.coming_soon) {
+    container.innerHTML = `
+      <div class="events-coming-soon">
+        <p class="events-coming-soon__body">Calendar is being put together — check back soon or <a href="connect.html">get in touch</a> to stay in the loop.</p>
+      </div>
+    `;
+    return;
+  }
+
   const sorted = [...data.events].sort((a, b) => a.date.localeCompare(b.date));
 
   if (!sorted.length) {

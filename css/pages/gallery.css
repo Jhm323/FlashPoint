@@ -168,6 +168,38 @@
   color: var(--color-mid);
 }
 
+.gallery-coming-soon {
+  background-color: var(--color-black);
+  padding: var(--space-xl) var(--space-md);
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.gallery-coming-soon__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.gallery-coming-soon__inner .text-label {
+  color: var(--color-accent);
+}
+
+.gallery-coming-soon__heading {
+  font-size: clamp(64px, 12vw, 120px);
+  color: var(--color-white);
+  line-height: 0.9;
+}
+
+.gallery-coming-soon__body {
+  font-weight: 300;
+  color: var(--color-mid);
+  max-width: 48ch;
+}
+
 @media (max-width: 768px) {
   .gallery-works__grid {
     grid-template-columns: repeat(2, 1fr);
