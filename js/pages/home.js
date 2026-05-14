@@ -11,7 +11,7 @@ function renderNowShowing(gallery) {
 
   if (gallery.coming_soon) {
     if (title) title.textContent = 'Coming Soon';
-    if (subtitle) subtitle.textContent = 'New exhibition on the way.';
+    if (subtitle) subtitle.innerHTML = 'New exhibition on the way. See past work on <a href="https://www.instagram.com/flashpointphilly/" target="_blank" rel="noopener">Instagram</a>.';
     const section = document.querySelector('.now-showing');
     if (section) section.classList.add('now-showing--coming-soon');
     return;
@@ -34,7 +34,7 @@ function renderEventsPreview(data) {
     .slice(0, 3);
 
   if (data.coming_soon || !upcoming.length) {
-    list.innerHTML = '<li class="event-item"><div class="event-item__body"><h3 class="event-item__name">Something\'s brewing.</h3><p class="event-item__detail">Calendar is being put together — check back soon.</p></div></li>';
+    list.innerHTML = '<li class="event-item"><div class="event-item__body"><h3 class="event-item__name">Something\'s brewing.</h3><p class="event-item__detail">Calendar is being put together — in the meantime, follow along on <a href="https://www.instagram.com/flashpointphilly/" target="_blank" rel="noopener">Instagram</a>.</p></div></li>';
     return;
   }
 

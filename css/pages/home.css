@@ -179,6 +179,13 @@
   object-fit: cover;
 }
 
+.now-showing__subtitle a,
+.event-item__detail a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .now-showing--coming-soon .now-showing__image-wrap::after {
   content: 'Coming Soon';
   position: absolute;
