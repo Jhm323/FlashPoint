@@ -8,6 +8,15 @@ function parseLocalDate(str) {
 function renderNowShowing(gallery) {
   const title = document.getElementById('now-showing-title');
   const subtitle = document.getElementById('now-showing-subtitle');
+
+  if (gallery.coming_soon) {
+    if (title) title.textContent = 'Coming Soon';
+    if (subtitle) subtitle.textContent = 'New exhibition on the way.';
+    const section = document.querySelector('.now-showing');
+    if (section) section.classList.add('now-showing--coming-soon');
+    return;
+  }
+
   if (title) title.textContent = gallery.current.artist;
   if (subtitle) subtitle.textContent = gallery.current.title;
 }

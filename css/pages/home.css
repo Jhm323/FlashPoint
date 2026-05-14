@@ -179,6 +179,20 @@
   object-fit: cover;
 }
 
+.now-showing--coming-soon .now-showing__image-wrap::after {
+  content: 'Coming Soon';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: clamp(40px, 6vw, 72px);
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  background-color: rgba(13, 13, 13, 0.6);
+}
+
 /* Events Preview */
 
 .events-preview {
