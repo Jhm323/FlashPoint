@@ -33,8 +33,8 @@ function renderEventsPreview(data) {
     .filter(e => parseLocalDate(e.date) >= today)
     .slice(0, 3);
 
-  if (!upcoming.length) {
-    list.innerHTML = '<li class="event-item"><div class="event-item__body"><h3 class="event-item__name">No upcoming events</h3><p class="event-item__detail">Check back soon</p></div></li>';
+  if (data.coming_soon || !upcoming.length) {
+    list.innerHTML = '<li class="event-item"><div class="event-item__body"><h3 class="event-item__name">Something\'s brewing.</h3><p class="event-item__detail">Calendar is being put together — check back soon.</p></div></li>';
     return;
   }
 
