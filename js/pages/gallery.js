@@ -14,7 +14,7 @@ function renderComingSoon() {
     <div class="gallery-coming-soon__inner">
       <span class="text-label">Next Exhibition</span>
       <h2 class="gallery-coming-soon__heading">Coming Soon</h2>
-      <p class="gallery-coming-soon__body">We're putting together the next show. Photos on their way.</p>
+      <p class="gallery-coming-soon__body">We're putting together the next show. In the meantime, see past work on <a href="https://www.instagram.com/flashpointphilly/" target="_blank" rel="noopener">Instagram</a>.</p>
       <a class="btn btn--outline" href="connect.html">Get in Touch</a>
     </div>
   `;
