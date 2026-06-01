@@ -8,15 +8,7 @@ function injectStructuredData() {
     url: 'https://flashpointphilly.com',
     email: 'flashpointphilly@gmail.com',
     foundingDate: '2025',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '1226 Tasker St',
-      addressLocality: 'Philadelphia',
-      addressRegion: 'PA',
-      addressCountry: 'US',
-    },
     priceRange: 'Free',
-    hasMap: 'https://maps.google.com/?q=1226+Tasker+St+Philadelphia+PA',
     knowsAbout: [
       'Outsider art',
       'Community events',

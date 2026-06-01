@@ -30,7 +30,7 @@ function buildNav() {
       </button>
     </nav>
     <div class="nav__overlay" id="nav-overlay" role="dialog" aria-label="Mobile navigation" aria-modal="true">
-      ${overlayLinks}
+      <div class="nav__overlay-links">${overlayLinks}</div>
     </div>
   `;
 
